@@ -1,0 +1,98 @@
+<!doctype html>
+<html>
+  <head>
+    <title>CSS - Entra21</title>
+  </head>
+  <body>
+    <h1>
+      <img
+        src="https://cdn.sonicadigital.com.br/entra21/storage/settings/1/original-691cbe5cd50d1.png"
+        alt="Entra21"
+        height="50"
+      />
+    </h1>
+    <header>
+      <nav>
+        <ul>
+          <li>
+            <a href="html.html">HTML</a>
+          </li>
+          <li>
+            <a href="css.html">CSS</a>
+          </li>
+          <li>
+            <a href="js.html">JS</a>
+          </li>
+          <li>
+            <a href="frontend_backend.html">Frontend X Backend</a>
+          </li>
+          <li>
+            <a href="contato.html">Contato</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h2>Contato</h2>
+
+      <form action="form.php" method="get">
+        <div>
+          <label for="nome">Nome:</label>
+          <input type="text" name="nome" id="nome" />
+        </div>
+        <div>
+          <label for="email">E-mail:</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div>
+          <label for="telefone">Telefone:</label>
+          <input type="text" name="telefone" id="telefone" maxlength="15" />
+        </div>
+        <div>
+          <label for="cidade">Cidade:</label>
+          <select name="cidade" id="cidade">
+            <option>Selecione uma cidade</option>
+            <option value="brusque">Brusque</option>
+            <option value="gaspar">Gaspar</option>
+            <option value="indaial">Indaial</option>
+            <option value="itajai">Itajai</option>
+            <option value="balneario_camboriu">Balneário Camboriu</option>
+            <option value="rio_do_sul">Rio do Sul</option>
+            <option value="timbo">Timbó</option>
+            <option value="blumenau">Blumenau</option>
+          </select>
+        </div>
+        <div>
+          <div>
+            <label for="tipo">Tipo:</label>
+          </div>
+          <div>
+            <input type="radio" name="checkbox" id="aluno" value="aluno" />
+            <label for="aluno">Aluno</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              name="checkbox"
+              id="parceiro"
+              value="parceiro"
+            />
+            <label for="parceiro">Parceiro</label>
+          </div>
+        </div>
+        <div>
+          <label for="mensagem">Mensagem:</label>
+          <textarea name="mensagem" id="mensagem" rows="3"></textarea>
+        </div>
+        <div>
+          <input type="checkbox" name="termos" id="termos" value="1" />
+          <label>Aceito os termos de uso</label>
+        </div>
+        <div>
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
